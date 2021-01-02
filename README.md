@@ -1,6 +1,6 @@
+# Serializable Trie
 <img width="400px" src="/src/main/resources/TrieSketch.jpeg"/>
 
-# Serializable Trie
 Serializable_trie is a trie implementation in java. This package provides a full-fledged Trie with following features.<br/>
 * Insert a string into the trie.
 * Delete a string from the trie.
