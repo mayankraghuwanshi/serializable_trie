@@ -52,6 +52,7 @@ public class TrieMap implements Trie {
         }
         if(currentNode.isEndOfWord()) {
             currentNode.setEndOfWordFalse();
+            --wordCount;
             return 1;
         }
 
