@@ -1,6 +1,7 @@
 package com.mayank.Trie;
 
 import com.mayank.Trie.impl.TrieMap;
+import com.mayank.Trie.impl.TrieNode;
 
 
 import java.io.File;
@@ -12,13 +13,6 @@ public class AppRunner {
 		File newFile = new File("serializeData.txt");
 		Trie trie = new TrieMap();
 		trie.buildTrieFromFile(file.getAbsoluteFile().toString());
-//		trie.insert("ab");
-		trie.serializeTrie();
-		trie.clear();
-		trie.deserializeTrie(newFile.getAbsoluteFile().toString());
-		System.out.println(trie.getWords());
-
-
 
 	}
 }

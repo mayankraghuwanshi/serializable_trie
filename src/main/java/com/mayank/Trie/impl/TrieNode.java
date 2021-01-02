@@ -50,4 +50,19 @@ public class TrieNode {
     public void setEndOfWordFalse(){
         endOfWord = false;
     }
+
+    @Override
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("{\n isEndOfWord : "+endOfWord+"\n children : [");
+
+        for(char key : getChildrenKeys()){
+            sb.append(key+",");
+        }
+
+        sb.append("]\n}");
+
+        return sb.toString();
+    }
 }
